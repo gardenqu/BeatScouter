@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    android:backgroundTint="#000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/black">
+
+        <!-- Song Icon -->
+        <ImageView
+            android:id="@+id/songIconLV"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/music_note_2_icon"
+            android:contentDescription="Song icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Song Name -->
+        <TextView
+            android:id="@+id/songNameLV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1DB954"
+            android:padding="8dp"
+            android:text="@string/songTitle"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/songIconLV"
+            app:layout_constraintTop_toTopOf="@id/songIconLV" />
+
+        <!-- Artist Icon -->
+        <ImageView
+            android:id="@+id/artistIconLV"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/artist_icon"
+            android:contentDescription="Artist icon"
+            app:layout_constraintTop_toBottomOf="@id/songIconLV"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="12dp" />
+
+        <!-- Artist Name -->
+        <TextView
+            android:id="@+id/artistTextLV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1DB954"
+            android:padding="8dp"
+            android:text="@string/artistName"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/artistIconLV"
+            app:layout_constraintTop_toTopOf="@id/artistIconLV" />
+
+
+
+        <!-- Compatibility Score -->
+        <TextView
+            android:id="@+id/compatibilityScoreLV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:padding="4dp"
+            android:text="@string/compatiblity"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/artistTextLV"
+            app:layout_constraintTop_toBottomOf="@id/artistTextLV" />
+
+        <!-- Cover Art -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="152dp"
+            android:src="@drawable/place_holder_img"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@id/compatibilityScoreLV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="next">siguiente</string>
+    <string name="previous">anterior</string>
+    <string name="enterSong">Ingresar nombre de la canción</string>
+    <string name="enterArtist">Ingresar nombre del artista</string>
+    <string name="FindRecommendation">Encontrar recomendación</string>
+    <string name="songTitle">Título de la canción</string>
+    <string name="artistName">Nombre del artista</string>
+    <string name="compatiblity">Compatibilidad: %1$d%%</string>
+</resources>
